@@ -1,0 +1,28 @@
+{
+    "name": "samgen",
+    "version": "0.0.2",
+    "description": "Additional abstraction level for AWS Lambda Functions",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "engines": {
+        "node": ">=14"
+    },
+    "files": [
+        "lib",
+        "!lib/**/*.map",
+        "build.js"
+    ],
+    "author": "Vlad Rudych <vlad@universium.co>",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "publish": "tsc && npm publish --access=public"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.72",
+        "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.1.13"
+    }
+}
